@@ -1,8 +1,8 @@
 <?php
 echo "sdfs";
-echo "hello"
-echo "hello world!"
-echo "genggai"
+echo "hello";
+echo "hello world!";
+echo "genggai";
 ?>
 
 
