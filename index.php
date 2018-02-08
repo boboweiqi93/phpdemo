@@ -51,7 +51,7 @@
 
 // print $aaa;
 // print "<br>";
-// print "在 $bbb $aaa";
+// print "$bbb $aaa";
 // print "<br>";
 // print "我的车品牌是 {$cars[2]}";
 
@@ -88,7 +88,7 @@
 //    }
 // }
 
-// // instantiate one object
+// // instantiate one object           实例化一个对象
 // $herbie = new Car("white");
 
 // // show herbie properties
@@ -105,7 +105,7 @@
 
 
 // 常量
-// 区分大小写的常量名,注意后面的第三个参数
+// 常量名是区分大小写的,注意后面的第三个参数
 // define("GREETING", "欢迎访问 Runoob.com" ,false  );
 // echo GREETING;    // 输出 "欢迎访问 Runoob.com"
 // echo '<br>';
@@ -264,13 +264,12 @@ krsort() - 根据关联数组的键，对数组进行降序排列
 // } while($z<$aaa)
 
 // 函数
-public function counts($x,$y){
-    $total = $x+$y;
-    return $total;
-}
-echo counts(1,15);
+// function counts($x,$y){
+//     $total = $x+$y;
+//     return $total;
+// }
+// echo counts(1,15);
 
-// public函数是怎么回事？  定义的时候，加了他，然后怎么调用呢？
 
 
 
@@ -287,13 +286,16 @@ echo counts(1,15);
 
 
 // class ceshi{
-//     function aaa(){
+//     public function aaa(){
 //         echo __function__;
 //         echo __class__;
 //     }
 // }
-// $t = new ceshi();
-// $t -> aaa();
+// $t = new ceshi();           //new 了一个对象
+// $t -> aaa();                //调用对象的方法
+
+
+
 
 // echo __FILE__;             // 当前的文件路径
 
